@@ -1,0 +1,17 @@
+//- index.jade
+extends ./layout
+
+block content
+  app
+  script(src='./scripts/tags.js')
+  script.
+    riot.route(function(tagName) {
+      console.log(tagName);
+      tagName = tagName || 'home';
+      riot.mount('content', tagName);
+      riot.update();
+    });
+    riot.route.start(true);
+    
+    var tags = riot.mount('app');
+
