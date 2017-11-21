@@ -1,9 +1,20 @@
 app
-  h1 test
-  a(href="#test") testlink
+  h1 testだよ
+  //test(content='{contents.test}')
+  br
+  a(href="#page-test") testlink
+  br
+  a(href="#members/kooh") menbers link
   content
 
   script.
-    console.log('mounted');
 
     var self = this;
+
+    this.contents = {
+      test: {
+        title: 'title',
+        body: 'body',
+        label: 'link label',
+      },
+    };

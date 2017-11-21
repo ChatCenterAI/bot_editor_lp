@@ -1,0 +1,13 @@
+page-test
+  h2 {opts.content.title}
+  p {opts.content.body}
+  p {opts.test}
+  p try opts
+
+  script.
+    console.log(opts);
+    /*
+    this.on('mount', function() {
+      console.log(riot.content);
+    });
+    */
