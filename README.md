@@ -1,2 +1,2 @@
-# refine
-LP of Refine
+# Bot Editor
+LP of Bot Editor
