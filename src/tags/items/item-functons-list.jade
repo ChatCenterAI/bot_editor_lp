@@ -1,0 +1,28 @@
+item-functons-list
+  div.wrap-item.f.mb8
+    div.wrap-icon.f.fh.mr6
+      img(src='./img/icon/check.svg')
+    div.wrap-p
+      p {content}
+
+  style(scoped, type='less').
+    :scope {
+      .wrap-item {
+        .wrap-icon {
+          min-width: 20px;
+          height: 20px;
+        }
+        .wrap-p {
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+
+  script.
+
+    var self = this;
+
+    this.content = opts.content;

@@ -1,0 +1,42 @@
+module-about
+  div.wrap-module.py30
+    div.wrap-card.f.flex-around
+      item-card-about(each='{item in cardContents}' content='{item}')
+    //div.wrap-button.f.fc
+      atom-button-registor(label='登録する')
+
+
+  style(scoped, type='less').
+    :scope {
+      display: block;
+      width: 100%;
+      background: #fff;
+      .wrap-module {
+        width: 100%;
+        max-width: 840px;
+        margin: 0 auto;
+
+      }
+      @media only screen and (max-width : 600px) {
+        .wrap-module {
+          .wrap-card {
+            display: block;
+          }
+        }
+      }
+    }
+
+
+  script.
+
+    var self = this;
+
+    this.on('mount', function(){
+      
+    });
+
+    this.cardContents = [
+      {label: 'Edit a Story Easily', src:'./img/icon/scenario_edit.svg'},
+      {label: 'Preview in Realtime', src:'./img/icon/preview.svg'},
+      {label: 'Export a Bot', src:'./img/icon/download.svg'},
+    ];

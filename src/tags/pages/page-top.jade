@@ -1,14 +1,15 @@
 page-top
   div.wrap-page
-    h2 top
+    module-hiro
+    module-about
+    module-functions
+    util-footer
 
   style(scoped, type='less').
     :scope {
       .wrap-page {
         display: block;
         width: 100%;
-        height: 100%;
-        background: #FFFF00;
       }
     }
 
@@ -16,9 +17,7 @@ page-top
 
     var self = this;
 
-
     this.on('mount', function(){
-
       
     });
     

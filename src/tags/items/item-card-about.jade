@@ -1,0 +1,37 @@
+item-card-about
+  div.wrap-item.px12.py20
+    p.mb8 {content.label}
+    div.wrap-img.f.fc
+      img(src='{content.src}').pt12
+
+  style(scoped, type='less').
+    :scope {
+      display: block;
+      width: 160px;
+      background: #fff;
+      border-radius: 3px;
+      .wrap-item {
+        p {
+          font-size: 14px;
+          font-weight: 600;
+          text-align: center;
+        }
+        .wrap-img {
+          width: 100%;
+          img {
+            width: 120px;
+            height: 120px;
+          }
+        }
+      }
+
+      @media only screen and (max-width : 600px) {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+
+
+  script.
+
+    this.content = opts.content;

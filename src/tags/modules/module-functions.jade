@@ -1,0 +1,71 @@
+module-functions.py40
+  div.wrap-module.f.fc.mb20
+    div.wrap-functions-container.px30.py20
+      p.title.mb20 Planned Functions
+      div.wrap-functions
+        div.wrap-list
+          item-functons-list(each='{item in listContents}' content='{item}')
+        //p(each='{item in listContents}').mb8 {item}
+  div.f.fc
+      atom-button-registor(label='事前登録する')
+  
+
+  style(scoped, type='less').
+    :scope {
+      display: block;
+      width: 100%;
+      background: #F5F5F5;
+      .wrap-module {
+        width: 100%;
+        .wrap-functions-container {
+          
+          background: #fff;
+          .title {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 800;
+          }
+          .wrap-functions {
+            .wrap-list {
+              width: 100%;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+      @media only screen and (max-width : 600px) {
+        .wrap-module {
+          .wrap-functions-container {
+            width: 90%;
+          }
+        }
+      }
+    }
+
+
+  script.
+
+    var self = this;
+
+    this.on('mount', function(){
+      
+    });
+    
+    this.listContents = [
+      '階層型ボットの編集',
+      '会話型ボットの編集',
+      'リアルタイムでのボットのプレビュー',
+      '優れたボットスクリプトにするためのボットによるアドバイス、サジェスチョン',
+      'テンプレートからのボット作成',
+      '作成したボットを独自URLで即座に公開',
+      'ボットとの会話履歴のアナリティクス',
+      'PDFなどへのエクスポート',
+      'ChatCenter Aiへのインポート',
+      'ChatCenter Aiへのボットスクリプトのリアルタイム反映',
+      'ボットスクリプトのURLによるシェア',
+      'ボットスクリプト編集のチーム・コラボレーション（オンライン同時編集）',
+      'ボットスクリプトのLINEボットへのインポート',
+      'ボットスクリプトのFacebook Messengerボットへのインポート',
+      'ボットスクリプトのMicrosoft Bot Frameworkへのインポート',
+      'Google Driveへの連携',
+    ];

@@ -1,0 +1,30 @@
+atom-button-registor
+  a(href='https://kooh.typeform.com/to/ybwUUk' target='brank').wrap-atom
+    p.px12.py8 {opts.label}
+
+
+  style(scoped, type='less').
+    :scope {
+      cursor: pointer;
+      display: inline-block;
+      border-radius: 3px;
+      overflow: hidden;
+      .wrap-atom {
+        display: block;
+        background: #FF5252;
+        p {
+          font-size: 12px;
+          font-weight: 100;
+          color: #fff;
+        }
+      }
+    }
+
+  script.
+
+    var self = this;
+
+    this.on('mount', function(){
+      
+    });
+    
